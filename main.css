@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content:flex-start;
@@ -31,6 +31,7 @@ body{
 	display: flex;
 	justify-content: space-around;
 	width: 30%;
+	margin: 0px 20px;
 }
 .links a{
 	margin:0px 10px;
@@ -47,17 +48,17 @@ body{
 .nav img{
 	width: 200px;
 }
-.nav button{
+.btn{
 	background: transparent;
 	border: 2px solid #9b5c20;
 	border-radius: 10px 0px;
 	color: white;
 	font-size: 20px;
-	width: 100px;
+	width: fit-content;
 	height: 40px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.nav button:hover{
+.btn:hover{
 	cursor: pointer;
 }
 
@@ -77,8 +78,30 @@ body{
 
 .home-text{
 	width: 40%;
+	font-size: 20px;
 }
-.p2{
+.home-text h1{
+	font-size: 40px;
+}
+.counter{
 	width: 100%;
-	height: 1000px;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cnt1,.cnt2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.cnt1 img,.cnt2 img{
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	margin: 20px;
+	border:1px solid #9b5c20;
+	border-radius: 20px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
