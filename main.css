@@ -188,3 +188,14 @@ body{
 	border-radius: 20px 0px;
 	padding: 10px;
 }
+
+.p5{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.build{
+	width: 50%;
+}
