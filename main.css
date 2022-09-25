@@ -56,6 +56,7 @@ body{
 	font-size: 20px;
 	width: fit-content;
 	height: 40px;
+	padding: 0px 10px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .btn:hover{
@@ -243,6 +244,18 @@ body{
 	justify-content: space-around;
 	align-items: center;
 }
+.p6-texts{
+	text-align: center;
+}
+.p6-texts h1{
+	margin: 10px;
+	font-size: 2.3em;
+}
+.p6-texts p{
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+}
 .p6-logos{
 	display: flex;
 	width: 100%;
@@ -261,4 +274,9 @@ body{
 }
 .p6-logos div img{
 	filter: invert(100%);
+}
+
+.p6-btns button{
+	padding: 0px 10px;
+	margin: 0px 20px;
 }
