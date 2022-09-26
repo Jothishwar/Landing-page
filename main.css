@@ -310,3 +310,19 @@ body{
 .navigation a:hover{
 	border-bottom:2px solid #9b5c20;
 }
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+}
+.email{
+	display: flex;
+}
+.email input{
+	width: 300px;
+	font-size: 15px;
+}
+.email button{
+	transform: translateX(-15px);
+}
