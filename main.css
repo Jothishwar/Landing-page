@@ -294,6 +294,7 @@ body{
 }
 .desc{
 	width: 30%;
+	margin-left: 20px;
 }
 .navigation{
 	display: flex;
@@ -325,4 +326,86 @@ body{
 }
 .email button{
 	transform: translateX(-15px);
+}
+
+@media(max-width: 768px){
+	.nav{
+		font-size: 15px;
+	}
+	.nav img ,.desc img{
+		width: 170px;
+	}
+	.home{
+		height: 90vh;
+	}
+	.home img{
+		width: 350px;
+	}
+	.home-text{
+		font-size: 15px;
+	}
+	.home-text h1{
+		font-size: 2em;
+	}
+	.btn{
+		font-size: 15px;
+	}
+	.counter{
+		height: 200px;
+	}
+	.p3{
+		width: 90%;
+		height: 80vh;
+		justify-content: space-around;
+	}
+	.solar-image img{
+		width: 250px;
+		height: 250px;
+		margin-left: 10px;
+	}
+	.p4{
+		font-size: 16px;
+		height: 100vh;
+		margin-top: 20px;
+	}
+	.top{
+		width: 60%;
+	}
+	.top h1{
+		font-size: 2em;
+	}
+	.build{
+		font-size: 15px;
+	}
+	.dapps-container{
+		width: 35%;
+	}
+	.dapps img{
+		width: 75px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	.p6-texts h1{
+		font-size: 2em;
+	}
+	.p6-logos div img{
+		width: 100px;
+		height: 50px;
+	}
+	#img2{
+		height: 30px;
+	}
+	.email input{
+		width: 200px;
+	}
+	.p6-logos div{
+		margin: 0px 10px;
+		padding: 5px 10px;
+		width: 130px;
+		height: 50px;
+	}
+	.footer{
+		font-size: 13px;
+	}
 }
