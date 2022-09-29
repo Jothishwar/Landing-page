@@ -409,3 +409,54 @@ body{
 		font-size: 13px;
 	}
 }
+@media(max-width: 425px){
+	body{
+		font-size: 13px;
+	}
+	.home img{
+		display: none;
+	}
+	.home-text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+	}
+	.counter{
+		flex-direction: column;
+		height: 50vh;
+	}
+	.cnt1,.cnt2{
+		width: 310px;
+		padding: 0px;
+	}
+	.cnt1 div,.cnt2 div{
+		width: 100px;
+	}
+	.solar-image{
+		display: none;
+	}
+	.p3{
+		height: 70vh;
+	}
+	.p4{
+		height: 100%;
+	}
+	.top{
+		width: 80%;
+	}
+	.p5{
+		flex-direction: column;
+		height: 100%;
+	}
+	.build{
+		width: 90%;
+	}
+	.p4-cards{
+		flex-direction: column;
+	}
+	.card{
+		width: auto;
+	}
+}
