@@ -450,13 +450,48 @@ body{
 		flex-direction: column;
 		height: 100%;
 	}
-	.build{
-		width: 90%;
-	}
 	.p4-cards{
 		flex-direction: column;
 	}
 	.card{
 		width: auto;
+	}
+	.p6{
+		height: 100%;
+	}
+	.build{
+		width: 90%;
+	}
+	.dapps-container{
+		width: 100%;
+		justify-content: space-around;
+	}
+	.p6-logos{
+		flex-direction: column;
+		align-items: center;
+	}
+	.p6-logos div{
+		margin: 5px 0px;
+	}
+	.p6-btns{
+		margin: 30px 0px;
+	}
+	.footer{
+		height: 100%;
+		flex-direction: column;
+	}
+	.desc{
+		margin: 10px 0px 0px 0px;
+		width: 90%;
+	}
+	.navigation{
+		display: none;
+	}
+	.contact{
+		width: 90vw;
+		margin: 10px 0px;
+	}
+	.links{
+		display: none;
 	}
 }
