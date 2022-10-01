@@ -6,6 +6,7 @@ body{
 	background: #141312;
 	color: white;
 	font-family: 'Poppins',sans-serif;
+	scroll-behavior: smooth;
 }
 
 .container{
@@ -26,7 +27,7 @@ body{
 	align-items: center;
 	font-size: 20px;
 	border-bottom: 1px solid #484444;
-	z-index: 999;
+	z-index: 1000;
 }
 .links{
 	display: flex;
@@ -49,6 +50,25 @@ body{
 .nav img,.desc img{
 	width: 200px;
 	filter: invert(100);
+}
+.burger{
+	display: none;
+	cursor: pointer;
+}
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color:rgb(226, 226, 226);
+	margin: 5px;
+}
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
 }
 .btn{
 	background: transparent;
@@ -412,6 +432,34 @@ body{
 @media(max-width: 425px){
 	body{
 		font-size: 13px;
+		overflow-x: hidden;
+	}
+	.nav{
+		width: 100%;
+		z-index: 100;
+		opacity: 1;
+	}
+	.nav img{
+		width: 130px;
+	}
+	.links{
+		position: absolute;
+		right: -20px;
+		height: 81vh;
+		top: 19vh;
+		width: 60%;
+		background-color: #1D1D1D;
+		z-index: 9999;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.burger{
+		display: block;
+		float: right;
+		margin-right: 30px;
 	}
 	.home img{
 		display: none;
@@ -466,6 +514,9 @@ body{
 		width: 100%;
 		justify-content: space-around;
 	}
+	.p6-texts{
+		width: 90vw;
+	}
 	.p6-logos{
 		flex-direction: column;
 		align-items: center;
@@ -491,7 +542,19 @@ body{
 		width: 90vw;
 		margin: 10px 0px;
 	}
-	.links{
-		display: none;
+}
+
+.nav-active{
+	transform: translateX(0%);
+	transition: transform 0.5s ease-in;
+}
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }
